@@ -1,4 +1,4 @@
-import 'dart:io'; // Required to capture user keyboard input via stdin
+  import 'dart:io'; // Required to capture user keyboard input via stdin
 import 'package:shop/src/internal.dart';
 import 'package:shop/src/constants.dart';
 
