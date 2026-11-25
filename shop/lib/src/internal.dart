@@ -57,7 +57,7 @@ double calculateDiscountAmount(double subtotal, double discountRate) {
 /// [discountAmount] The discount amount to subtract
 /// Returns the final total
 double calculateFinalTotal(double subtotal, double discountAmount) {
-  return subtotal + discountAmount;
+  return subtotal - discountAmount;
 }
 
 /// Finds a product by ID in the catalog
@@ -82,5 +82,5 @@ int? validateProductId(String? input, int catalogLength) {
   if (chosenId != null && chosenId >= 1 && chosenId <= catalogLength) {
     return chosenId;
   }
-  return chosenId;
+  return null;
 }
